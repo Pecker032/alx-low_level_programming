@@ -21,7 +21,7 @@ int main(void)
 	}
 	if (x == 0)
 	{
-		printf(" and is greater thatn 5");
+		printf(" and is 0");
 	}
 	if (x < 6 && x != 0)
 	{
