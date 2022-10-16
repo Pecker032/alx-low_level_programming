@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <unistd.h>
 /**
- *  main - Entry print a new line with a standard error
- *  Return: 1
+ * main - Entry
+ * Return: 1
 */
 
 int main(void)
