@@ -1,22 +1,22 @@
 #include "main.h"
-
 /**
- * _puts - prints a string, followed by a new line.
- * @str: input string.
- * Return: no return.
+ * _strcmp - compares two strings
+ * @s1: first string.
+ * @s2: second string.
+ * Return: 0 if s1 and s2 are equals,
+ * another number if not.
+ *
  */
-void _puts(char *str)
+int _strcmp(char *s1, char *s2)
 {
-	int count = 0;
+	int i;
 
-	while (count >= 0)
+	for (i = 0; s1[i] != '\0' || s2[i] != '\0'; i++)
 	{
-		if (str[count] == '\0')
+		if (s1[i] != s2[i])
 		{
-			_putchar('\n');
-			break;
+			return (s1[i] - s2[i]);
 		}
-		_putchar(str[count]);
-		count++;
 	}
+	return (0);
 }
